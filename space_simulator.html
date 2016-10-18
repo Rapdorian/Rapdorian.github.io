@@ -45,27 +45,35 @@
 		<img id="planet_8" src="images/planets/8.png" width="32" height="32">
  
 	</div>
-	<center>
-		<canvas id="gameCanvas" tabindex="1"  width="800" height="600" style="border:1px solid #2f2f2f;">
-
-		</canvas>
-	</center>
-
-
-	<ul>
-		<li> 'WASD' will fire your thrusters in the corresponding direction</li>
-
-		<li> 'R' to reset ship </li> 
-
-		<li> 'N' to get a new planet <button onclick="set_lava_planet()">See my Favourite Planet</button></li> 
-
-		<li> M' to switch between simple and procedurally generated drawing modes<br> (simple mode may increase framereate if the game is running slow)  </li> 
-
-
-		<li> How Many Times per Second Should the Planet Spin: (lower values can help framereate) <input type="text" id="simplex_timer" value="15">
-			<button onclick="update_planet_speed()">Update Planet Speed</button> </li>
-	</ul>
 	
+	<div style="width: 100%; overflow: hidden; display: flex; flex-wrap: wrap; justify-content: center">
+
+		<div style="width: 800px; float: left;">
+			<canvas id="gameCanvas" tabindex="1"  width="800" height="600" style="border:1px solid #2f2f2f;">
+
+			</canvas>
+		</div>
+
+
+		<div class="panel" style="width: 350px">
+
+			<ul>	
+				<li> 'WASD' will fire your thrusters in the corresponding direction</li>
+
+				<li> 'R' to reset ship </li> 
+
+				<li> 'N' to get a new planet <button onclick="set_lava_planet()">See my Favourite Planet</button></li> 
+
+				<li> M' to switch between simple and procedurally generated drawing modes<br> (simple mode may increase framereate if the game is running slow)  </li> 
+
+
+				<li> How Many Times per Second Should the Planet Spin: (lower values can help framereate) <input type="text" id="simplex_timer" value="15">
+					<button onclick="update_planet_speed()">Update Planet Speed</button> </li>
+			</ul>
+
+		</div>
+
+	</div>
 	
 
 <script src="space_simulator.js"></script>
