@@ -29,4 +29,6 @@ a{
 body{
 	color:#BBBBBB;
 	background-color: #2f2f2f;
+	background-image: url("images/bg.png");
+	background-repeat: repeat;
 }
