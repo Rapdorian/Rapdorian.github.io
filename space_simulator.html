@@ -1,0 +1,60 @@
+<head>
+	<title> Space Simulator </title>
+	<link rel="stylesheet" type="text/css" href="dark_gray.css">
+	<script src="simplex.js"></script>
+	
+
+</head>
+<center>
+	<H2> This is a space simulator I made </H2>
+
+	<br>
+	<!-- <H3> You Must Click on the Game Window for the Buttons to Work </H3> -->
+
+	<!-- Include Images -->
+	<div style="display:none;">
+		<img id="planet_1" src="images/planets/1.png" width="32" height="32">
+		<img id="planet_2" src="images/planets/2.png" width="32" height="32">
+		<img id="planet_3" src="images/planets/3.png" width="32" height="32">
+		<img id="planet_4" src="images/planets/4.png" width="32" height="32">
+		<img id="planet_5" src="images/planets/5.png" width="32" height="32">
+		<img id="planet_6" src="images/planets/6.png" width="32" height="32">
+		<img id="planet_7" src="images/planets/7.png" width="32" height="32">
+		<img id="planet_8" src="images/planets/8.png" width="32" height="32">
+ 
+	</div>
+
+	<canvas id="gameCanvas" tabindex="1"  width="800" height="600" style="border:1px solid #2f2f2f;">
+
+	</canvas>
+
+	</center>
+
+	<ul>
+		<li> 'WASD' will fire your thrusters in the corresponding direction</li><br>
+
+		<li> 'R' to reset ship </li> <br>
+
+		<li> 'N' to get a new planet <button onclick="set_lava_planet()">See my Favourite Planet</button></li> <br>
+
+		<li> M' to switch between simple and procedurally generated drawing modes<br> (simple mode may increase framereate if the game is running slow)  </li>
+
+		
+	</ul>
+
+
+	How Many Times per Second Should the Planet Spin: (lower values can help framereate) <input type="text" id="simplex_timer" value="15">
+	<button onclick="update_planet_speed()">Update Planet Speed</button>
+	
+	
+
+	<hr>
+<center>
+		<p>
+		<a href="index.html">Home</a> | <a href="aboutme.html">About Me</a> | <a href="projects.html"> Projects </a>
+		</p>
+</center>
+
+
+<script src="space_simulator.js"></script>
+
