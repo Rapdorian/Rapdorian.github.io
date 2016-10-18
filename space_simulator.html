@@ -5,8 +5,30 @@
 	
 
 </head>
-<center>
-	<H2> This is a space simulator I made </H2>
+
+
+<nav style="padding:0; margin:0;"> 
+	<div class="menubar">
+		<div class="mbutt">
+			<a href="index.html"> Home </a>
+		</div>
+
+		<div class="mbutt">
+			<a href="aboutme.html"> About Me </a>
+		</div>
+
+		<div class="mbutt">
+			<a href="contact.html"> Contact Me </a>
+		</div>
+
+		<div class="mbutt">
+			<a href="projects.html"> Projects </a>
+		</div>
+	</div>
+</nav>
+
+
+	<H1> This is a space simulator I made </H1>
 
 	<br>
 	<!-- <H3> You Must Click on the Game Window for the Buttons to Work </H3> -->
@@ -23,12 +45,12 @@
 		<img id="planet_8" src="images/planets/8.png" width="32" height="32">
  
 	</div>
+	<center>
+		<canvas id="gameCanvas" tabindex="1"  width="800" height="600" style="border:1px solid #2f2f2f;">
 
-	<canvas id="gameCanvas" tabindex="1"  width="800" height="600" style="border:1px solid #2f2f2f;">
-
-	</canvas>
-
+		</canvas>
 	</center>
+
 
 	<ul>
 		<li> 'WASD' will fire your thrusters in the corresponding direction</li><br>
@@ -45,14 +67,6 @@
 	</ul>
 	
 	
-
-	<hr>
-<center>
-		<p>
-		<a href="index.html">Home</a> | <a href="aboutme.html">About Me</a> | <a href="contact.html"> Contact Me </a> | <a href="projects.html"> Projects </a>
-		</p>
-</center>
-
 
 <script src="space_simulator.js"></script>
 

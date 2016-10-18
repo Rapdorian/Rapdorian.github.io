@@ -1,3 +1,13 @@
+html, body { margin: 0; padding: 0; } 
+
+#div1 {
+	display: inline-block;
+}
+
+#div2 {
+	display: inline-block;
+}
+
 H1{
 	color: #FFFFFF;
 }
@@ -23,7 +33,35 @@ ul{
 }
 
 a{
-	color: #888888;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menubar{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	background-color: #282828;
+	color: #FFFFFF;
+	font-size: 30pt;
+}
+
+.mbutt{
+	padding: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background-color: #282828;
+	color: #FFFFFF;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.mbutt:hover{
+	background-color: #555555;
+	color: #FFFFFF;
+	display: inline-block
 }
 
 body{
