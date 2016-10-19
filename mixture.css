@@ -1,0 +1,96 @@
+html, body { margin-left: 10%; margin-right: 10%; padding: 0; } 
+
+#div1 {
+	display: inline-block;
+}
+
+#div2 {
+	display: inline-block;
+}
+
+H1{
+	color: #000000;
+}
+
+H2{
+	color: #000000;
+}
+
+H3{
+	color: #000000;
+}
+
+p{
+	color: #444444;
+}
+
+ol {
+	color: #444444;
+}
+
+li {
+	margin-top: 10px;
+}
+
+ul{
+	color: #444444;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+canvas{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 0px;
+	display: inline-block;
+}
+
+.area{
+	width: 400px;
+}
+
+.panel{
+	padding: 5px;
+	margin: 10px;
+	background-color: #282828;
+	border-radius: 10px;
+	color: #000000;
+	width: 400px;
+}
+
+.menubar{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	background-color: #282828;
+	color: #000000;
+	font-size: 30pt;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mbutt{
+	padding: 5px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	background-color: #282828;
+	color: #000000;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.mbutt:hover{
+	background-color: #555555;
+	color: #000000;
+	display: inline-block
+}
+
+body{
+	color:#444444;
+	background-color: #2f2f2f;
+	background-image: url("images/ricepaper.png");
+	background-repeat: repeat;
+}
