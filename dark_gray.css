@@ -9,6 +9,7 @@ html, body { margin-left: 10%; margin-right: 10%; padding: 0; }
 }
 
 H1{
+	font-size: 24pt;
 	color: #FFFFFF;
 }
 
@@ -21,6 +22,7 @@ H3{
 }
 
 p{
+	font-size: 16pt;
 	color: #BBBBBB;
 }
 
@@ -33,6 +35,7 @@ li {
 }
 
 ul{
+	text-align:left;
 	color: #BBBBBB;
 }
 
