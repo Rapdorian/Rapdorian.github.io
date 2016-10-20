@@ -1,4 +1,4 @@
-html, body { margin-left: 10%; margin-right: 10%; padding: 0; } 
+html{ background-color: #3f3f3f; margin-bottom: 0px; }
 
 #div1 {
 	display: inline-block;
@@ -14,10 +14,12 @@ H1{
 }
 
 H2{
+	font-size: 18pt;
 	color: #FFFFFF;
 }
 
 H3{
+	font-size: 16pt;
 	color: #FFFFFF;
 }
 
@@ -92,9 +94,15 @@ canvas{
 }
 
 body{
+	margin-top: 0px;
+	margin-bottom: 2%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 0;
 	color:#BBBBBB;
 	background-color: #2f2f2f;
-	background-image: url("images/bg.png");
-	background-repeat: repeat;
+	/*background-image: url("images/bg.png");
+	background-repeat: repeat;*/
 	font-size: 16pt;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
