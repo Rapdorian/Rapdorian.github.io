@@ -53,7 +53,7 @@ canvas{
 }
 
 .area{
-	width: 400px;
+	width: 80%;
 }
 
 .panel{
@@ -62,7 +62,7 @@ canvas{
 	background-color: #282828;
 	border-radius: 10px;
 	color: #FFFFFF;
-	width: 400px;
+	width: 80%;
 }
 
 .menubar{
