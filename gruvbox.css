@@ -12,10 +12,12 @@
 
 html {
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background-color: var(--dark-color);
 }
 
 body {
+    margin: 0px;
+    padding: 5px;
     background-color: var(--bg-color);
 }
 
