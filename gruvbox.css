@@ -49,3 +49,10 @@ hr{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
+
+.button{
+    padding: 1%;
+    border-left: 2px solid var(--accent-color);
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
