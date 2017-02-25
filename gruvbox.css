@@ -63,3 +63,9 @@ hr{
     background-color: var(--light-color);
     color: var(--dark-color);
 }
+
+.icon-box{
+    display: flex; 
+    align-items: center;
+    height: 32px;
+}
