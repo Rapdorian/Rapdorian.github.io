@@ -91,6 +91,6 @@ canvas{
 body{
 	color:#444444;
 	background-color: #2f2f2f;
-	background-image: url("images/ricepaper.png");
+	background-image: url("../images/ricepaper.png");
 	background-repeat: repeat;
 }
