@@ -1,82 +1,79 @@
+<html>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+
 <head>
 	<title> Space Simulator </title>
 	<link rel="stylesheet" type="text/css" href="dark_gray.css">
+	<link rel="stylesheet" type="text/css" href="widgets.css">
 	<script src="simplex.js"></script>
-	
+
 
 </head>
 
+<body>
+	<div id="wrapper">
+		<div w3-include-html="sidebar.html"></div>
 
-<nav style="padding:0; margin:0;"> 
-	<div class="menubar">
+		<div id="content">
 			<center>
-			<div class="mbutt">
-				<a href="index.html"> Home </a>
-			</div>
+				<H1> This is a space simulator I made </H1>
 
-			<div class="mbutt">
-				<a href="aboutme.html"> About Me </a>
-			</div>
+				<br>
+				<!-- <H3> You Must Click on the Game Window for the Buttons to Work </H3> -->
 
-			<div class="mbutt">
-				<a href="contact.html"> Contact Me </a>
-			</div>
+				<!-- Include Images -->
+				<div style="display:none;">
+					<img id="planet_1" src="images/planets/1.png" width="32" height="32">
+					<img id="planet_2" src="images/planets/2.png" width="32" height="32">
+					<img id="planet_3" src="images/planets/3.png" width="32" height="32">
+					<img id="planet_4" src="images/planets/4.png" width="32" height="32">
+					<img id="planet_5" src="images/planets/5.png" width="32" height="32">
+					<img id="planet_6" src="images/planets/6.png" width="32" height="32">
+					<img id="planet_7" src="images/planets/7.png" width="32" height="32">
+					<img id="planet_8" src="images/planets/8.png" width="32" height="32">
 
-			<div class="mbutt">
-				<a href="projects.html"> Projects </a>
-			</div>
-		</center>
-	</div>
-</nav>
+				</div>
 
-<center>
-	<H1> This is a space simulator I made </H1>
+				<div style="width: 100%; overflow: hidden; display: flex; flex-wrap: wrap; justify-content: center">
 
-	<br>
-	<!-- <H3> You Must Click on the Game Window for the Buttons to Work </H3> -->
+					<div style="width: 800px; float: left;">
+						<canvas id="gameCanvas" tabindex="1" width="800" height="600" style="border:1px solid #2f2f2f;">
 
-	<!-- Include Images -->
-	<div style="display:none;">
-		<img id="planet_1" src="images/planets/1.png" width="32" height="32">
-		<img id="planet_2" src="images/planets/2.png" width="32" height="32">
-		<img id="planet_3" src="images/planets/3.png" width="32" height="32">
-		<img id="planet_4" src="images/planets/4.png" width="32" height="32">
-		<img id="planet_5" src="images/planets/5.png" width="32" height="32">
-		<img id="planet_6" src="images/planets/6.png" width="32" height="32">
-		<img id="planet_7" src="images/planets/7.png" width="32" height="32">
-		<img id="planet_8" src="images/planets/8.png" width="32" height="32">
- 
-	</div>
-	
-	<div style="width: 100%; overflow: hidden; display: flex; flex-wrap: wrap; justify-content: center">
+						</canvas>
+					</div>
 
-		<div style="width: 800px; float: left;">
-			<canvas id="gameCanvas" tabindex="1"  width="800" height="600" style="border:1px solid #2f2f2f;">
 
-			</canvas>
+					<div class="panel">
+
+						<ul>
+							<li> 'WASD' will fire your thrusters in the corresponding direction</li>
+
+							<li> 'R' to reset ship </li>
+
+							<li> 'N' to get a new planet <button onclick="set_lava_planet()">See my Favourite Planet</button></li>
+
+							<li> M' to switch between simple and procedurally generated drawing modes<br> (simple mode may increase framereate if the
+								game is running slow) </li>
+
+
+							<li> How Many Times per Second Should the Planet Spin: (lower values can help framereate) <input type="text" id="simplex_timer"
+								    value="15">
+								<button onclick="update_planet_speed()">Update Planet Speed</button> </li>
+						</ul>
+
+					</div>
+
+				</div>
+			</center>
 		</div>
-
-
-		<div class="panel">
-
-			<ul>	
-				<li> 'WASD' will fire your thrusters in the corresponding direction</li>
-
-				<li> 'R' to reset ship </li> 
-
-				<li> 'N' to get a new planet <button onclick="set_lava_planet()">See my Favourite Planet</button></li> 
-
-				<li> M' to switch between simple and procedurally generated drawing modes<br> (simple mode may increase framereate if the game is running slow)  </li> 
-
-
-				<li> How Many Times per Second Should the Planet Spin: (lower values can help framereate) <input type="text" id="simplex_timer" value="15">
-					<button onclick="update_planet_speed()">Update Planet Speed</button> </li>
-			</ul>
-
-		</div>
-
 	</div>
-</center>
 
-<script src="space_simulator.js"></script>
+	<script src="space_simulator.js"></script>
 
+	<script>
+		w3IncludeHTML();
+	</script>
+
+</body>
+
+</html>
