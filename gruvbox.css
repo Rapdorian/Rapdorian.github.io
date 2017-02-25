@@ -1,0 +1,51 @@
+:root {
+    /* raw colors */
+    --dark-color: #282828;
+    --medium-color: #a89984;
+    --light-color: #ebdbb2;
+    --accent-color: #98971A;
+
+    /* specifc color use */
+    --bg-color: var(--dark-color);
+    --text-color: var(--light-color);
+}
+
+html {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+hr{
+    height: 1px;
+    color: var(--accent-color);
+    background: var(--accent-color);
+    font-size: 0;
+    border: 0;
+    margin-bottom: 5%;
+}
+
+#sidebar {
+    border-right: 2px solid var(--medium-color);
+}
+
+#sidebar-button {
+    padding: 1%;
+    border-left: 2px solid var(--accent-color);
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 2px;
+}
+
+#sidebar-button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
