@@ -34,7 +34,7 @@ hr{
     background: var(--accent-color);
     font-size: 0;
     border: 0;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 
 #sidebar {
