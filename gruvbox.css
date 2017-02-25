@@ -56,3 +56,8 @@ hr{
     color: var(--text-color);
     margin-bottom: 10px;
 }
+
+.button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
