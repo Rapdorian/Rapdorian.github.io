@@ -35,7 +35,7 @@ li{
 
 #sidebar-button{}
 
-#ltr-box {
+#row-box {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
