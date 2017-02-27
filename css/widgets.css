@@ -35,6 +35,12 @@ li{
 
 #sidebar-button{}
 
+#ltr-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 #halfsies-box{
     margin-left: 50%;
 }
